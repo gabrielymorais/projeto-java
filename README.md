@@ -1,3 +1,22 @@
+## 📌 Sobre o projeto
+
+Projeto em **Java (POO)** que calcula pagamentos de forma **polimórfica** usando a interface `Payable`.
+
+### Principais componentes
+- **Payable**: contrato com `getPaymentAmount()`
+- **Employee (abstrata)**: base para funcionários
+  - `SalariedEmployee`, `HourlyEmployee`, `CommissionEmployee`,
+    `BasePlusCommissionEmployee`, `PieceWorker`
+- **Invoice**: fatura que também implementa `Payable`
+- **Date**: representa data de nascimento
+
+### O que o projeto demonstra
+- **Herança, sobrescrita e polimorfismo**
+- Processamento unificado de objetos `Payable[]`
+- **Testes automatizados com JUnit 5** (inclui teste de integração simples)
+- Build/execução com **Maven** e ambiente isolado via **Docker**
+
+
 ## 🧱 1. Estrutura do Projeto
 
 A estrutura **obrigatória** para o Maven reconhecer corretamente o projeto é:
