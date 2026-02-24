@@ -1,0 +1,7 @@
+services:
+  tests:
+    build: .
+    container_name: projeto-java-tests
+    working_dir: /app
+    volumes:
+      - .:/app

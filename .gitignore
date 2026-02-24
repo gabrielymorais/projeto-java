@@ -1,0 +1,23 @@
+# Maven / Java build
+target/
+*.class
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
