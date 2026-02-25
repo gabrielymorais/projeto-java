@@ -87,30 +87,10 @@ docker compose run --rm tests mvn test surefire-report:report
 ```bash
 start target/site/surefire-report.html
 ```
-## 🧹 7. Limpando o Projeto
 
-Para limpar os artefatos gerados:
-```bash
-docker compose run --rm tests mvn clean
-```
-#### Isso remove a pasta: target/
-
-## 🔄 8. Fluxo Completo Resumido
-
-Passo a passo do zero até o relatório:
-
-### 1️⃣ Build e rodar testes
-```bash
-docker compose up --build --abort-on-container-exit
-```
-### 2️⃣ Gerar relatório HTML
-```bash
-docker compose run --rm tests mvn test surefire-report:report
-```
-### 3️⃣ Abrir relatório
-```bash
-start target/site/surefire-report.html
-```
+## 🖼️ 7. Resultado do relatório no navegador: 
+![Imagem do relatório](prints/tela1.png)
+![Imagem do relatório](prints/tela2.png)
 
 ## 📊 Exemplo de Resultado Esperado
 #### No relatório HTML você verá:
@@ -134,6 +114,32 @@ Failures: 0
 Errors: 0
 Skipped: 0
 ```
+## 🧹 8. Limpando o Projeto
+
+Para limpar os artefatos gerados:
+```bash
+docker compose run --rm tests mvn clean
+```
+#### Isso remove a pasta: target/
+
+## 🔄 9. Fluxo Completo Resumido
+
+Passo a passo do zero até o relatório:
+
+### 1️⃣ Build e rodar testes
+```bash
+docker compose up --build --abort-on-container-exit
+```
+### 2️⃣ Gerar relatório HTML
+```bash
+docker compose run --rm tests mvn test surefire-report:report
+```
+### 3️⃣ Abrir relatório
+```bash
+start target/site/surefire-report.html
+```
+
+
 
 ## 🏆 Status Atual do Projeto
 #### ✅ 23 testes executados
